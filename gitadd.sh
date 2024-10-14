@@ -12,7 +12,7 @@ find . -type f -not -path './.git/*' | while read file; do
     git add "$filename"
     
     # Commit the file with a message
-    git commit -m "add: $filename"
+    git commit -m "init: $filename"
 done
 
 echo "All files have been added and committed individually."
